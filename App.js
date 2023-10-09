@@ -1,14 +1,15 @@
 import {Button, Text, View, TextInput, StyleSheet, Pressable, ScrollView} from 'react-native';
+import{NavigationContainer} from '@react-navigation/native';
 import {useState} from "react";
 import React from 'react';
+import Navigation from "./Navigation";
+import ToDoList from "./ToDoList";
 
 export default function App() {
     return (
-        <View style={styles.container}>
-            <LoginForm/>
-            <View style={styles.emptyView}/>
-            <Boxes/>
-        </View>
+        <NavigationContainer>
+            <Navigation />
+        </NavigationContainer>
     );
 };
 
