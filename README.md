@@ -1,8 +1,12 @@
 # ReactNative_Homework
 
-https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/ca476506-6f14-4a7f-9230-6f0e69f1fd92
+
+https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/09b61eee-a0bc-4431-a7fd-c08fdec62438
 
 
 
-https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/a7a3b024-d5f4-43e4-a323-36085a16ccd8
+
+
+
+https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/25e0f86f-af22-49a9-a0dd-e6b094acb9b6
 
