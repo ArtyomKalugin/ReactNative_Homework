@@ -9,5 +9,9 @@ https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/25e0f86f-a
 
 https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/d83b8a05-d6a1-41b7-bb2e-f949e401986a
 
+### Задание 5:
+
+
+https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/e77d2150-3de6-4795-aeef-98a90e054f46
 
 
