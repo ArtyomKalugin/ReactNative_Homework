@@ -1,7 +1,7 @@
 import {FlatList, SafeAreaView, StyleSheet, Text, View} from "react-native";
 import {StatusBar} from "expo-status-bar";
 import React from "react";
-import {ToDoCompletedLine} from "../Component/ToDoCompletedLine";
+import {ToDoCompletedLine} from "../../Component/ToDoCompletedLine";
 
 export const CompletedToDoScreen = ({route}) => {
     const keyExtractor = (index) => {

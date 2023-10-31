@@ -1,6 +1,6 @@
-import {ClickerStore} from "../../Screen/ClickerScreen/Store/ClickerStore";
+import {ClickerStore} from "../../Module/ClickerModule/Store/ClickerStore";
 import React from "react";
-import {ToDoStore} from "../../Screen/ToDoScreen/Store/ToDoStore";
+import {ToDoStore} from "../../Module/ToDoModule/Store/ToDoStore";
 
 class RootStore {
     clickerStore;

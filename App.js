@@ -3,10 +3,7 @@ import{NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {useState} from "react";
 import React from 'react';
-import Navigation from "./Navigation";
-import ToDoScreen, {CompletedScreen} from "./Screen/ToDoScreen/Screen/ToDoScreen";
-import {TabNavigation} from "./TabScreen";
-import {ClickerScreen} from "./Screen/ClickerScreen/Screen/ClickerScreen";
+import Navigation from "./Navigation/Navigation";
 
 const Stack = createNativeStackNavigator();
 

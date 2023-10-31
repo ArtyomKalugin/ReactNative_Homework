@@ -1,8 +1,8 @@
 import {Button, View, Text} from "react-native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import * as React from 'react';
-import {ToDoScreen} from "./Screen/ToDoScreen/Screen/ToDoScreen";
-import {CompletedToDoScreen} from "./Screen/ToDoScreen/Screen/CompletedToDoScreen";
+import {ToDoScreen} from "../Screen/ToDoScreen/ToDoScreen";
+import {CompletedToDoScreen} from "../Screen/ToDoScreen/CompletedToDoScreen";
 
 const Stack = createNativeStackNavigator();
 
