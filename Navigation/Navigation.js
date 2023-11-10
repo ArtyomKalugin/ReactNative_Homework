@@ -3,6 +3,7 @@ import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import * as React from 'react';
 import {ToDoScreen} from "../Screen/ToDoScreen/ToDoScreen";
 import {CompletedToDoScreen} from "../Screen/ToDoScreen/CompletedToDoScreen";
+import {PostsScreen} from "../Screen/PostsScreen/PostsScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -12,6 +13,7 @@ export default function Navigation() {
             <Stack.Screen name={'Home'} component={HomeScreen}/>
             <Stack.Screen name={'About'} component={AboutScreen}/>
             <Stack.Screen name={'ToDoScreen'} component={ToDoScreen}/>
+            <Stack.Screen name={'PostsScreen'} component={PostsScreen} />
             <Stack.Screen name={'CompletedToDo'} component={CompletedToDoScreen}/>
         </Stack.Navigator>
     );
@@ -27,6 +29,10 @@ function HomeScreen({navigation}) {
             <Button
                 onPress={() => navigation.navigate('ToDoScreen')}
                 title='ToDo List'
+            />
+            <Button
+                onPress={() => navigation.navigate('PostsScreen')}
+                title='Posts'
             />
         </View>
     );

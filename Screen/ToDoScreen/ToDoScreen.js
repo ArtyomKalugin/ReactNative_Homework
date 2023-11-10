@@ -4,7 +4,6 @@ import {Button, FlatList, SafeAreaView, StyleSheet, Text, TextInput, View} from 
 import {observer} from "mobx-react";
 import {useRootStore} from "../../Store/RootStore/UseRootStore";
 import {ToDoLine} from "../../Component/ToDoLine";
-import {axiosClient} from "../../axios/AxiosClient";
 
 export const ToDoScreen = observer(({navigation}) => {
     const [text, setText] = useState('');
@@ -26,18 +25,6 @@ export const ToDoScreen = observer(({navigation}) => {
     const keyExtractor = (index) => {
         return index.toString();
     };
-
-    axiosClient
-        .get('/posts')
-        .then(response => {
-            console.log('RESPONSE: ', response);
-        })
-        .catch(error => {
-            console.log('ERROR: ', error);
-        })
-        .then(() => {
-            console.log('AFTER RESULT');
-        })
 
     return (
         <SafeAreaView style={styles.container}>
