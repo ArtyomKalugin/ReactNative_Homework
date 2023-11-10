@@ -19,6 +19,13 @@ https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/e77d2150-3
 
 https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/dd202f8a-acfe-4d46-8e99-d3ef670afdf2
 
+### Задание 7:
+
+
+
+https://github.com/ArtyomKalugin/ReactNative_Homework/assets/45566988/b540fcd6-d87c-40db-8e20-476e1dbf5a03
+
+
 
 
 
