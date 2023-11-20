@@ -28,6 +28,11 @@ export class ToDoStore {
 
     get getCompletedTodos() {
         const items = [...this.todos];
-        return items.filter(item => item.isDone);
+        return items.filter(item => {
+                if (item !== undefined) {
+                    return item.isDone
+                }
+        }
+        );
     }
 }

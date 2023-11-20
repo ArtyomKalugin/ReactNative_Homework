@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
     },
     titleText: {
         fontWeight: '400',
-        fontSize: 18,
-        flex: 3
+        fontSize: 18
     },
 })

@@ -14,7 +14,6 @@ export default function Navigation() {
             <Stack.Screen name={'About'} component={AboutScreen}/>
             <Stack.Screen name={'ToDoScreen'} component={ToDoScreen}/>
             <Stack.Screen name={'PostsScreen'} component={PostsScreen} />
-            <Stack.Screen name={'CompletedToDo'} component={CompletedToDoScreen}/>
         </Stack.Navigator>
     );
 }

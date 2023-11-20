@@ -1,11 +1,25 @@
 import React, {useState} from "react";
 import {Button, StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import {Alert} from "react-native";
 
 export const ToDoLine = (props) => {
     const [isVisible, setIsVisible] = useState(true);
     const [isCompleted, setIsCompleted] = useState(false);
 
     const onRemove = () => {
+        Alert.alert("Вы уверены?", "Точно удалить?", [
+            {
+                text: "Отменить",
+                style: 'cancel',
+            },
+            {
+                text: "OK",
+                onPress: () => remove()
+            }
+        ])
+    }
+
+    const remove = () => {
         setIsVisible(false);
         props.onRemove(props.item)
     }

@@ -1,9 +1,13 @@
 import {StatusBar} from 'expo-status-bar';
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {Button, FlatList, SafeAreaView, StyleSheet, Text, TextInput, View} from 'react-native';
 import {observer} from "mobx-react";
 import {useRootStore} from "../../Store/RootStore/UseRootStore";
 import {ToDoLine} from "../../Component/ToDoLine";
+import {Modalize} from "react-native-modalize";
+import {ToDoCompletedLine} from "../../Component/ToDoCompletedLine";
+import {Portal} from "react-native-portalize";
+import {CompletedToDoScreen} from "./CompletedToDoScreen";
 
 export const ToDoScreen = observer(({navigation}) => {
     const [text, setText] = useState('');
@@ -25,6 +29,12 @@ export const ToDoScreen = observer(({navigation}) => {
     const keyExtractor = (index) => {
         return index.toString();
     };
+
+    const modalizeRef = useRef(null);
+
+    const openCompletedToDos = () => {
+        modalizeRef.current.open();
+    }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -48,10 +58,27 @@ export const ToDoScreen = observer(({navigation}) => {
                 <View style={styles.emptyView}></View>
                 <Button
                     title='Completed'
-                    onPress={() => navigation.navigate('CompletedToDo', {completedTodos: getCompletedToDos()})}
+                    onPress={() => openCompletedToDos()}
                 />
                 <StatusBar style="auto"/>
             </View>
+
+            <Portal>
+                <Modalize
+                    ref={modalizeRef}
+                    modalTopOffset={200}
+                    childrenStyle={{
+                        padding: 16,
+                        flex: 1
+                    }}
+                    flatListProps={{
+                        data: getCompletedToDos(),
+                        keyExtractor: (item, index) => keyExtractor(index),
+                        renderItem: (item) => <ToDoCompletedLine item={item}></ToDoCompletedLine>
+                    }}
+                >
+                </Modalize>
+            </Portal>
         </SafeAreaView>
     )
     }

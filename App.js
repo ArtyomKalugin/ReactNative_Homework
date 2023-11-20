@@ -4,14 +4,20 @@ import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {useState} from "react";
 import React from 'react';
 import Navigation from "./Navigation/Navigation";
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { Host } from 'react-native-portalize';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
     return (
-        <NavigationContainer>
-            <Navigation />
-        </NavigationContainer>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <Host>
+                <NavigationContainer>
+                    <Navigation />
+                </NavigationContainer>
+            </Host>
+        </GestureHandlerRootView>
     );
 };
 
